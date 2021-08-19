@@ -39,7 +39,17 @@ Our Lab of Genomics-One-A will investigate :detective: exome sequencing data fro
 <br>
 
 ## Workflow ✍️
+Step 1: Reteieve sequenced reads of father, mother and proband  in fastq format and import the datasets into the https://usegalaxy.org/
 
+Step 2: Perform quality check using FastQC tool and aggregate all the FastQC results into single report using MultiQC tool.
+
+Step 3: Perform adapter trimming using Trimmomatic tool on fastq datasets.
+
+Step 4: Perform read mapping using Map with BWA-MEM tool to generate BAM file.
+
+Step 5: Perform mapped reads post-processing using Filter SAM or BAM, output SAM or BAM tool and RmDup tool to filter low quality mapped reads and remove duplicate reads respectively. 
+
+Step 6: Perform variant calling step using FreeBayes tools to generate VCF file.
 
 
 <p align="center">
