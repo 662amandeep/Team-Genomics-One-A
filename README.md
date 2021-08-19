@@ -57,6 +57,8 @@ Step 8: Perform variant annotation using SnpEff eff tool and SnpSift tool.
 
 Step 9: Perform the combined variant extraction/annotation/storage step using GEMINI load tool.
 
+Step 10: Perform candidate variant detection using GEMINI inheritance pattern tool.
+
 
 <p align="center">
    <br>
