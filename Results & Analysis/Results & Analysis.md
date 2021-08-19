@@ -16,3 +16,10 @@
 <br>
 	<br>
 	</p>
+3. Mapping was performed using Map with BWA-MEM tool on fathers, mother’s and proband’s datasets with reference genome. 
+<p align="center">
+<br>
+<img src="https://user-images.githubusercontent.com/88246395/130130162-9d1e268c-7d2f-41d4-9318-db1ecff964e8.JPG" width="700" height="300">
+<br>
+	<br>
+	</p>
