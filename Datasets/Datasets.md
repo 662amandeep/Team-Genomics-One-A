@@ -17,3 +17,8 @@
 [https://zenodo.org/record/3243160/files/proband_R1.fq.gz](https://zenodo.org/record/3243160/files/proband_R1.fq.gz)
 
 [https://zenodo.org/record/3243160/files/proband_R1.fq.gz](https://zenodo.org/record/3243160/files/proband_R1.fq.gz)
+
+
+## Reference sequence (human chromosome 8)
+
+[https://zenodo.org/record/3243160/files/hg19_chr8.fa.gz](https://zenodo.org/record/3243160/files/hg19_chr8.fa.gz)
