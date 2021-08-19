@@ -61,7 +61,7 @@ Get to know our awesome team members and their contributions 👩‍💻👨‍�
 
 | Team members	| @Slack username  | Contributions |
 | :------------- | :-------------	| :------------- |
-| Aditi Singh	| @AditiSingh12345  | Validation of Workflow and Retrieved Datasets and uploaded on Galaxy |
+| [Aditi Singh](https://github.com/Aditisingh11322)	| @AditiSingh12345  | Validation of Workflow and Retrieved Datasets and uploaded on Galaxy |
 | [Amandeep Kaur (Team Lead)](https://github.com/662amandeep) |@Amandeep  | Conceptualization of the workflow, performed variant annotation using SnpSift, Modified Graphical representation, Modified Github readme file  | 
 | [Ananya Saji](https://github.com/AnanyaSaji) |@AnanyaSaji |  Validation of Workflow and Performed FastQC of Father’s dataset |
 | Anjali Negi | @genesis  | Validation of Workflow and Performed FastQC of Mother’s dataset, Worked on Graphical representation  |
@@ -75,7 +75,7 @@ Get to know our awesome team members and their contributions 👩‍💻👨‍�
 | [Neha Rose Pious](https://github.com/neharosepious) | @Neharose |  Validation of Workflow and Filter mapped reads of Mother’s dataset |
 | [Qamar Raza Qadri](https://github.com/qamrq)| @Qamar | Validation of Workflow and Filter mapped reads of Proband’s dataset, created Github Repo  |
 | [Rajarshi Mondal](https://github.com/Rajarshi0)| @Rajarshi_Mondal | Validation of Workflow and Remove duplicates from Father’s mapped reads, Worked on GitHub readme file  |
-| Rohan Kumar | @Rohanraj11 | Validation of Workflow and Remove duplicates from Mother’s and Proband’s mapped reads  |
+| [Rohan Kumar](https://github.com/rohanraj11322) | @Rohanraj11 | Validation of Workflow and Remove duplicates from Mother’s and Proband’s mapped reads  |
 | [Sooraj S](https://github.com/sooraj14072001) | @Sooraj  | Validation of Workflow and Performed Variant calling using FreeBayes call, Worked on Graphical representation  |
 | [Suresh Kumar Mendem](https://github.com/suresh2014) | @Suresh  | Validation of Workflow and Performed Postprocessing FreeBayes call using bcftools |
 | [Tasneem](https://github.com/tasneem786) | @Tasneem | Validation of Workflow and Performed variant annotation using SnpEff eff, Worked on Graphical representation |
