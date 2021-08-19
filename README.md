@@ -71,7 +71,7 @@ Get to know our awesome team members and their contributions 👩‍💻👨‍�
 | Lakshmi S Prasad | @lakshmip  | Validation of Workflow and Performed mapping of Father’s datasets  | 
 | Lokesh V | @Lokesh | Validation of Workflow and Performed mapping of Mother’s datasets  |
 |[Nanthana Ravichandran](https://github.com/nanthanaravichandran)| @Nanthanaravi   | Validation of Workflow and Performed mapping of Proband’s datasets |
-| Nasrin Parvin | @Nasrin |  Validation of Workflow and Filter mapped reads of Father’s dataset |
+| [Nasrin Parvin](https://github.com/Nasrin0) | @Nasrin |  Validation of Workflow and Filter mapped reads of Father’s dataset |
 | [Neha Rose Pious](https://github.com/neharosepious) | @Neharose |  Validation of Workflow and Filter mapped reads of Mother’s dataset |
 | [Qamar Raza Qadri](https://github.com/qamrq)| @Qamar | Validation of Workflow and Filter mapped reads of Proband’s dataset, created Github Repo  |
 | [Rajarshi Mondal](https://github.com/Rajarshi0)| @Rajarshi_Mondal | Validation of Workflow and Remove duplicates from Father’s mapped reads, Worked on GitHub readme file  |
