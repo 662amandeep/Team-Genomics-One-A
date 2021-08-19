@@ -67,7 +67,7 @@ Get to know our awesome team members and their contributions 👩‍💻👨‍�
 | [Anjali Negi](https://github.com/genesis234) | @genesis  | Validation of Workflow and Performed FastQC of Mother’s dataset, Worked on Graphical representation  |
 | [Darshana Joshi](https://github.com/darshana2509) | @DarshanaJoshi  | Validation of Workflow and Performed variant annotation using GEMINI load and candidate variant detection |
 | [Harshitha BC](https://github.com/HarshithaBC) | @Harshitha  | Validation of Workflow and Performed FastQC of Proband’s dataset, Worked on GitHub readme file |
-| Jyothi| @Jyothi  | Validation of Workflow and Performed MultiQC of FastQC files  |
+| [Jyothi](https://github.com/jyothi1721)| @Jyothi  | Validation of Workflow and Performed MultiQC of FastQC files  |
 | [Lakshmi S Prasad](https://github.com/Lakshmip108) | @lakshmip  | Validation of Workflow and Performed mapping of Father’s datasets  | 
 | [Lokesh V](https://github.com/lokegamechanger) | @Lokesh | Validation of Workflow and Performed mapping of Mother’s datasets  |
 |[Nanthana Ravichandran](https://github.com/nanthanaravichandran)| @Nanthanaravi   | Validation of Workflow and Performed mapping of Proband’s datasets |
