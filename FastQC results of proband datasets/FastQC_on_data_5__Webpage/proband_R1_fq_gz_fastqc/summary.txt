@@ -1,0 +1,11 @@
+PASS	Basic Statistics	proband_R1_fq_gz.gz
+PASS	Per base sequence quality	proband_R1_fq_gz.gz
+PASS	Per tile sequence quality	proband_R1_fq_gz.gz
+PASS	Per sequence quality scores	proband_R1_fq_gz.gz
+WARN	Per base sequence content	proband_R1_fq_gz.gz
+FAIL	Per sequence GC content	proband_R1_fq_gz.gz
+PASS	Per base N content	proband_R1_fq_gz.gz
+PASS	Sequence Length Distribution	proband_R1_fq_gz.gz
+PASS	Sequence Duplication Levels	proband_R1_fq_gz.gz
+PASS	Overrepresented sequences	proband_R1_fq_gz.gz
+PASS	Adapter Content	proband_R1_fq_gz.gz
