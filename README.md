@@ -49,7 +49,13 @@ Step 4: Perform read mapping using Map with BWA-MEM tool to generate BAM file.
 
 Step 5: Perform mapped reads post-processing using Filter SAM or BAM, output SAM or BAM tool and RmDup tool to filter low quality mapped reads and remove duplicate reads respectively. 
 
-Step 6: Perform variant calling step using FreeBayes tools to generate VCF file.
+Step 6: Perform variant calling step using FreeBayes tools to generate VCF file containing SNPs, MNPs and Indels.
+
+Step 7: Perform FreeBayes post-processing using bcftool norm to normalize indels and split multiallelic sites into multiple rows.
+
+Step 8: Perform variant annotation using SnpEff eff tool and SnpSift tool.
+
+Step 9: Perform the combined variant extraction/annotation/storage step using GEMINI load tool.
 
 
 <p align="center">
