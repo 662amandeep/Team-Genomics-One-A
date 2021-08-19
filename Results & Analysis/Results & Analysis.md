@@ -7,6 +7,12 @@
 <br>
 	<br>
 	</p>
-
-
-
+2. MultiQC tool was used to aggregate the results from FastQC into a single report.
+<p align="center">
+<br>
+<img src="https://user-images.githubusercontent.com/88246395/130129607-b3b1f5a9-ad37-45a9-82e5-383aaa777f9f.JPG" width="700" height="300">
+<img src="https://user-images.githubusercontent.com/88246395/130129610-5fd62865-7ef9-4433-8708-81f6e8d9d2dc.JPG" width="700" height="300">
+<img src="https://user-images.githubusercontent.com/88246395/130129612-8c1f6219-0807-4033-8a42-e013c6f67a3e.JPG" width="700" height="300">
+<br>
+	<br>
+	</p>
