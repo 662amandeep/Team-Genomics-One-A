@@ -1,0 +1,11 @@
+PASS	Basic Statistics	mother_R2_fq_gz.gz
+PASS	Per base sequence quality	mother_R2_fq_gz.gz
+PASS	Per tile sequence quality	mother_R2_fq_gz.gz
+PASS	Per sequence quality scores	mother_R2_fq_gz.gz
+WARN	Per base sequence content	mother_R2_fq_gz.gz
+FAIL	Per sequence GC content	mother_R2_fq_gz.gz
+PASS	Per base N content	mother_R2_fq_gz.gz
+PASS	Sequence Length Distribution	mother_R2_fq_gz.gz
+PASS	Sequence Duplication Levels	mother_R2_fq_gz.gz
+PASS	Overrepresented sequences	mother_R2_fq_gz.gz
+PASS	Adapter Content	mother_R2_fq_gz.gz
