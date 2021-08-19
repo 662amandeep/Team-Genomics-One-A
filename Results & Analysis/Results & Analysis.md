@@ -33,3 +33,6 @@
 <br>
 	<br>
 	</p>
+6. Post-processing FreeBayes calls was performed using bcftools norm, which normalizes indels and split multiallelic sites into multiple rows. 
+<br>
+<br>
