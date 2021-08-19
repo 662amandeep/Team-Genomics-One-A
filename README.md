@@ -40,6 +40,8 @@ Our Lab of Genomics-One-A will investigate :detective: exome sequencing data fro
 
 ## Workflow ✍️
 
+
+
 <p align="center">
    <br>
 <img align="center" alt="gif" src="https://github.com/662amandeep/Team-Genomics-One-A/blob/main/Images/workflow.gif" width="650">
