@@ -126,4 +126,22 @@ Filter the mapped reads by selecting the tool, Filter SAM or BAM, output SAM or 
      . “output_type”: uncompressed VCF
 - Look out for the output listing the total number of variant lines processed, along with the number of splits, realigned, and skipped records.
 ```
+## Variant annotation
 
+```
+- Use the SnpEff Download to download genome annotation database  hg19
+- Create a PED-formatted pedigree dataset describing the single-family sample trio in the following format:
+
+      #family_id    name     paternal_id    maternal_id    sex    phenotype
+        FAM         father    0              0              1      1
+        FAM         mother    0              0              2      1
+        FAM         proband   father         mother         1      2
+
+- Use the SnpEff eff tool and set the following parameters:
+    .“Sequence changes (SNPs, MNPs, InDels)”: the output of bcftools norm tool
+    .“Input format”: VCF
+    .“Output format”: VCF (only if input is VCF)
+    .“Genome source”: Locally installed reference genome
+    .“Genome”: Homo sapiens: hg19 (or a similarly named option)
+    .“Produce Summary Stats”: Yes
+```
