@@ -1,0 +1,11 @@
+PASS	Basic Statistics	father_R1_fq_gz.gz
+PASS	Per base sequence quality	father_R1_fq_gz.gz
+WARN	Per tile sequence quality	father_R1_fq_gz.gz
+PASS	Per sequence quality scores	father_R1_fq_gz.gz
+WARN	Per base sequence content	father_R1_fq_gz.gz
+FAIL	Per sequence GC content	father_R1_fq_gz.gz
+PASS	Per base N content	father_R1_fq_gz.gz
+PASS	Sequence Length Distribution	father_R1_fq_gz.gz
+PASS	Sequence Duplication Levels	father_R1_fq_gz.gz
+PASS	Overrepresented sequences	father_R1_fq_gz.gz
+PASS	Adapter Content	father_R1_fq_gz.gz
