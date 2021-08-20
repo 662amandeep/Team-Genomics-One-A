@@ -39,7 +39,7 @@ Our Lab of Genomics-One-A will investigate :detective: exome sequencing data fro
 <br>
 
 ## Workflow ✍️
-Step 1: Reteieve sequenced reads of father, mother and proband  in fastq format and import the datasets into the https://usegalaxy.org/ or https://usegalaxy.eu/
+Step 1: Retrieve sequenced reads of father, mother and proband  in fastq format and import the datasets into the https://usegalaxy.org/ or https://usegalaxy.eu/
 
 Step 2: Perform quality check using FastQC tool and aggregate all the FastQC results into single report using MultiQC tool.
 
