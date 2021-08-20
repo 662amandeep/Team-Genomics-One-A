@@ -21,7 +21,7 @@ Welcome to our Genomics Lab where we do everything with genes🧬. This is a tea
 ## Stage 2 Task 🧐🧐
 - Reproduce a bioinformatics tutorial that correlates with our biostack (Genomics) 
 - Advertise a quick and simple design of our desired tutorial on #transfer-market channel on Slack workspace 
-- Create a comprehensive markdown of the step followed 
+- Create a comprehensive markdown of the steps followed 
 
 Exciting!😍
 
