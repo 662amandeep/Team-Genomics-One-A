@@ -98,7 +98,7 @@ Filter the mapped reads by selecting the tool, Filter SAM or BAM, output SAM or 
 
 ```
 ## Variant Calling 
-  ### Generating FreeBayes Calls
+  ### ⨀ Generating FreeBayes Calls
   
   ```
  - Select the FreeBayes tool and set the parameters:
@@ -111,7 +111,7 @@ Filter the mapped reads by selecting the tool, Filter SAM or BAM, output SAM or 
  - Inspect the VCF outputs produced by FreeBayes.
 
 ```
- ### Post-processing of FreeBayes
+ ### ⨀ Post-processing of FreeBayes
  
  ```
 - Use the bcftools norm tool and set the following parameters:
