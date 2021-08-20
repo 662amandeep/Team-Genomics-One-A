@@ -81,8 +81,8 @@ Get to know our awesome team members and their contributions 👩‍💻👨‍�
 
 | Team members	| @Slack username  | Contributions |
 | :------------- | :-------------	| :------------- |
-| [Aditi Singh](https://github.com/Aditisingh11322)	| @AditiSingh12345  | Validation of Workflow and Retrieved Datasets and uploaded on Galaxy |
-| [Amandeep Kaur (Team Lead)](https://github.com/662amandeep) |@Amandeep  | Conceptualization of the workflow, performed variant annotation using SnpSift, Modified Graphical representation, Modified Github readme file  | 
+| [Aditi Singh](https://github.com/Aditisingh11322)	| @AditiSingh12345  | Validation of Workflow and Retrieved Datasets and uploaded on Galaxy, Performed trimming of reads |
+| [Amandeep Kaur (Team Lead)](https://github.com/662amandeep) |@Amandeep  | Conceptualization and validation of the workflow, performed variant annotation using SnpSift, Modified Graphical representation, Modified Github readme file  | 
 | [Ananya Saji](https://github.com/AnanyaSaji) |@AnanyaSaji |  Validation of Workflow and Performed FastQC of Father’s dataset |
 | [Anjali Negi](https://github.com/genesis234) | @genesis  | Validation of Workflow and Performed FastQC of Mother’s dataset, Worked on Graphical representation  |
 | [Darshana Joshi](https://github.com/darshana2509) | @DarshanaJoshi  | Validation of Workflow and Performed variant annotation using GEMINI load and candidate variant detection |
