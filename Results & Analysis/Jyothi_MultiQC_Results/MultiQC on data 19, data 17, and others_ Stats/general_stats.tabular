@@ -1,0 +1,7 @@
+Sample	FastQC_mqc-generalstats-fastqc-percent_duplicates	FastQC_mqc-generalstats-fastqc-percent_gc	FastQC_mqc-generalstats-fastqc-avg_sequence_length	FastQC_mqc-generalstats-fastqc-percent_fails	FastQC_mqc-generalstats-fastqc-total_sequences
+father_R1_fq_gz	23.160991815001864	44.0	101.0	9.090909090909092	2023471.0
+father_R2_fq_gz	21.392674885294966	44.0	101.0	9.090909090909092	2023471.0
+mother_R1_fq_gz	23.30184911348468	44.0	101.0	9.090909090909092	1776099.0
+mother_R2_fq_gz	21.908436665356675	44.0	101.0	9.090909090909092	1776099.0
+proband_R1_fq_gz	25.43830951620744	44.0	101.0	9.090909090909092	2392554.0
+proband_R2_fq_gz	23.103085060430402	44.0	101.0	9.090909090909092	2392554.0

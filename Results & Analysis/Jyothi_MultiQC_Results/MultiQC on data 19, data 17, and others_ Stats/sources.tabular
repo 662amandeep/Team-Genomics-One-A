@@ -1,0 +1,7 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	father_R1_fq_gz	/data/dnb03/galaxy_db/job_working_directory/027/257/27257734/working/multiqc_WDir/fastqc_0/data_0/file_0/fastqc_data.txt
+FastQC	all_sections	father_R2_fq_gz	/data/dnb03/galaxy_db/job_working_directory/027/257/27257734/working/multiqc_WDir/fastqc_0/data_0/file_1/fastqc_data.txt
+FastQC	all_sections	proband_R2_fq_gz	/data/dnb03/galaxy_db/job_working_directory/027/257/27257734/working/multiqc_WDir/fastqc_0/data_0/file_5/fastqc_data.txt
+FastQC	all_sections	mother_R2_fq_gz	/data/dnb03/galaxy_db/job_working_directory/027/257/27257734/working/multiqc_WDir/fastqc_0/data_0/file_3/fastqc_data.txt
+FastQC	all_sections	mother_R1_fq_gz	/data/dnb03/galaxy_db/job_working_directory/027/257/27257734/working/multiqc_WDir/fastqc_0/data_0/file_2/fastqc_data.txt
+FastQC	all_sections	proband_R1_fq_gz	/data/dnb03/galaxy_db/job_working_directory/027/257/27257734/working/multiqc_WDir/fastqc_0/data_0/file_4/fastqc_data.txt
