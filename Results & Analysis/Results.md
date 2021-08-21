@@ -109,8 +109,9 @@ The inheritance pattern of the causative variants or candidate variant detection
 <br>
 	<br>
 	</p>
+
 ## Conclusion
-It is concluded from the study that the following variants were detected which may cause osteopetrosis in the respective genes:
+It is concluded from the study that the following variants in the respective genes were detected which may cause osteopetrosis:
 - C>T 6479041 (MCPH1)
 - C>G 19819723 (LPL)
 - T>C 27324821 (CHRNA2)
