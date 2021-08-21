@@ -154,19 +154,19 @@ Filter the mapped reads by selecting the tool, Filter SAM or BAM, output SAM or 
 ### Candidate Variant Detection
 
 ```
-Use the GEMINI inheritance pattern tool and set the following parameters:
-“GEMINI database”: the GEMINI database of annotated variants; output of GEMINI load tool
-“Your assumption about the inheritance pattern of the phenotype of interest”: Autosomal recessive
-“Additional constraints on variants”
-“Additional constraints expressed in SQL syntax”: impact_severity != 'LOW'
-“Include hits with less convincing inheritance patterns”: No
-“Report candidates shared by unaffected samples”: No
-“Family-wise criteria for variant selection”: keep default settings
-In “Output - included information”
-“Set of columns to include in the variant report table”: Custom (report user-specified columns)
-“Choose columns to include in the report”:
- “alternative allele frequency (max_aaf_all)”
-“Additional columns (comma-separated)”: chrom, start, ref, alt, impact, gene, clinvar_sig, clinvar_disease_name, clinvar_gene_phenotype, rs_ids
+- Use the GEMINI inheritance pattern tool and set the following parameters:
+    .“GEMINI database”: the GEMINI database of annotated variants; output of GEMINI load tool
+    .“Your assumption about the inheritance pattern of the phenotype of interest”: Autosomal recessive
+        >“Additional constraints on variants”
+        >“Additional constraints expressed in SQL syntax”: impact_severity != 'LOW'
+        >“Include hits with less convincing inheritance patterns”: No
+        >“Report candidates shared by unaffected samples”: No
+- “Family-wise criteria for variant selection”: keep default settings
+- In “Output - included information”
+    .“Set of columns to include in the variant report table”: Custom (report user-specified columns)
+    .“Choose columns to include in the report”:
+        >“alternative allele frequency (max_aaf_all)”
+    .“Additional columns (comma-separated)”: chrom, start, ref, alt, impact, gene, clinvar_sig, clinvar_disease_name, clinvar_gene_phenotype, rs_ids
 
 ```
-
+**For Result & Analysis: [Click Here](https://github.com/662amandeep/Team-Genomics-One-A/blob/main/Results%20%26%20Analysis/Results.md)**
