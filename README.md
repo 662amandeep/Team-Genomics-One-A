@@ -53,6 +53,7 @@ Retrieve sequenced reads of father, mother and proband  in fastq format from [Ze
 - Run the **FastQC tool** on six of the fastq datasets with the following parameter:
 ```
     - “Short read data from your current history”: all 6 FASTQ datasets selected with Multiple datasets
+    - Then Execute
 ```
 - Use the **MultiQC tool** by setting the following parameter to aggregate the raw FastQC data of all input datasets into one report:
 
@@ -62,6 +63,7 @@ Retrieve sequenced reads of father, mother and proband  in fastq format from [Ze
      - In “FastQC output”
      - “Type of FastQC output?”: Raw data
      - “FastQC output”: all six RawData outputs of FastQC 
+     - Then Execute
      - Inspect the webpage output produced by the tool to check if trimming/filtering is necessary before mapping the reads.
 ```
 
@@ -83,6 +85,7 @@ Retrieve sequenced reads of father, mother and proband  in fastq format from [Ze
       . “Read group identifier (ID)”: 000
       . “Auto-assign”: No
       . “Read group sample name (SM)”: father
+      . Then Execute
 ```   
 
 - Perform the read mapping for ‘Mother’ and ‘Proband’ samples with the same parameters mentioned in the previous step with the following changes:
@@ -110,6 +113,7 @@ Filter the mapped reads by selecting the tool, **Filter SAM or BAM, output SAM o
   - “Skip alignments with any of these flag bits set”:
          ✅ “The read is unmapped”
          ✅ “The mate is unmapped”
+  - Then Execute
   - Ensure if three new datasets are produced with one for each of the samples.
 
 ```
@@ -119,6 +123,7 @@ Select **RmDup tool** and set the following parameters:
    - “BAM file”: all 3 filtered reads datasets; the outputs of Filter SAM or BAM
    - “Is this paired-end or single end data”: BAM is paired end
    - “Treat as single-end”: No
+   - Then Execute
 ```
 Ensure if three more new datasets are produced after this step.
 
@@ -132,6 +137,7 @@ Ensure if three more new datasets are produced after this step.
      - “Using reference genome”: Human: hg19
      - “Limit variant calling to a set of regions?”: Do not limit
      - “Choose parameter selection level”: 1. Simple diploid calling
+     - Then Execute
 ```
 Inspect the VCF outputs produced by FreeBayes.
 
@@ -147,6 +153,7 @@ Inspect the VCF outputs produced by FreeBayes.
      - “~multiallelics”: split multiallelic sites into biallelic records (-)
      - “split the following variant types”: both
      - “output_type”: uncompressed VCF
+     - Then Execute
 ```
 Look out for the output listing the total number of variant lines processed, along with the number of splits, realigned, and skipped records
 
@@ -167,6 +174,7 @@ Look out for the output listing the total number of variant lines processed, alo
     - “Genome source”: Locally installed reference genome
     - “Genome”: Homo sapiens: hg19 (or a similarly named option)
     - “Produce Summary Stats”: Yes
+    - Then Execute
 ```
 - Use the **SnpSift Variant type tool** and select output of SnpEff and execute.
 
@@ -191,6 +199,7 @@ Look out for the output listing the total number of variant lines processed, alo
    Leave unchecked the following:
      - “Genotype likelihoods (sample PLs)”
      - “only variants that passed all filters”
+     - Then Execute
 ```
 
 ### Step 10: Candidate Variant Detection
@@ -208,7 +217,7 @@ Look out for the output listing the total number of variant lines processed, alo
     .“Choose columns to include in the report”:
         >“alternative allele frequency (max_aaf_all)”
     .“Additional columns (comma-separated)”: chrom, start, ref, alt, impact, gene, clinvar_sig, clinvar_disease_name, clinvar_gene_phenotype, rs_ids
-
+- Then Execute
 ```
 
 
