@@ -210,7 +210,7 @@ Look out for the output listing the total number of variant lines processed, alo
     .“Additional columns (comma-separated)”: chrom, start, ref, alt, impact, gene, clinvar_sig, clinvar_disease_name, clinvar_gene_phenotype, rs_ids
 
 ```
-**For Result & Analysis: [Click Here](https://github.com/662amandeep/Team-Genomics-One-A/blob/main/Results%20%26%20Analysis/Results.md)**
+
 
 <p align="center">
    <br>
@@ -219,6 +219,8 @@ Look out for the output listing the total number of variant lines processed, alo
 <br>
 </p>
 
+
+**For Result & Analysis: [Click Here](https://github.com/662amandeep/Team-Genomics-One-A/blob/main/Results%20%26%20Analysis/Results.md)**
 
 
 ## References :scroll:
