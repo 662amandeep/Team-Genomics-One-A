@@ -46,7 +46,7 @@ Following are the trimmed datasets:
 - Trimmed Proband_R2:[Click Here](https://usegalaxy.eu/datasets/11ac94870d0bb33a9f3e07eaab3e8ad7/display/?preview=True)
 
 ### Step 4: Read Mapping
-Mapping was performed using Map with BWA-MEM tool on fathers, mother’s and proband’s datasets with reference genome. The following is the BAM file geneerated after mapping:
+Mapping was performed using Map with BWA-MEM tool on fathers, mother’s and proband’s datasets with reference genome [hg19](https://zenodo.org/record/3243160/files/hg19_chr8.fa.gz). The following is the BAM file geneerated after mapping:
 - Mapped Father datasets: [BAM File](https://usegalaxy.eu/datasets/11ac94870d0bb33a97c7cc9f6a20ec8e/display/?preview=True)
 - Mapped Mother datasets: [BAM File](https://usegalaxy.eu/datasets/11ac94870d0bb33a29eea5237162eedf/display/?preview=True)
 - Mapped Proband datasets: [BAM File](https://usegalaxy.eu/datasets/11ac94870d0bb33a82f28b9314631865/display/?preview=True)
