@@ -4,7 +4,7 @@
 
 Team Genomics-one-A agreed to work on the exome sequencing data for diagnosing a genetic disease named ‘Osteopetrosis’. Exome sequencing is the sequencing of the transcribed parts of the genome. In our project, we have analyzed exome sequencing data from a family trio, in which the boy child was affected with Osteopetrosis but his parents were unaffected. The ultimate goal of the project is to identify the genetic variation that is responsible for the disease.
 
-## Data preparation
+### Step 1: Data preparation
 ```
 - Import the original sequencing reads datasets of the family trio from ‘Zenodo’. 
 - Check if the datatypes were assigned correctly in the format, fastqsanger.gz 
@@ -14,7 +14,7 @@ Team Genomics-one-A agreed to work on the exome sequencing data for diagnosing a
 
 ```
 
-## Quality control
+### Step 2: Quality control
 ```
 Run the FastQC tool on six of the fastq datasets with the following parameter:
 
@@ -28,7 +28,7 @@ Run the FastQC tool on six of the fastq datasets with the following parameter:
      - Inspect the webpage output produced by the tool to check if trimming/filtering is necessary before mapping the reads.
 ```
 
-## Read Mapping
+### Step 3: Read Mapping
 
 ```
 - Use the Map with BWA-MEM tool to map the reads from the ‘Father’, ‘Mother’, and the ‘Proband’ samples to the reference genome, respectively.
@@ -48,27 +48,11 @@ Run the FastQC tool on six of the fastq datasets with the following parameter:
     Perform the read mapping for ‘Mother’ and ‘Proband’ samples with the same parameters mentioned in the previous step with the following changes:
        
        Mother Sample:
-      . “Will you select a reference genome from your history or use a built-in index?”: Use a built-in genome index
-      . “Using reference genome”: Human:hg19
-      . “Single or Paired-end reads”: Paired
-      . “Select first set of reads”: the forward reads (R1) dataset of the father sample
-      . “Select second set of reads”: the reverse reads (R2) dataset of the father sample
-      . “Set read groups information?”: Set read groups (SAM/BAM specification)
-      . “Auto-assign”: No
       . “Read group identifier (ID)”: 001
-      . “Auto-assign”: No
       . “Read group sample name (SM)”: mother
       
        Proband Sample:
-      . “Will you select a reference genome from your history or use a built-in index?”: Use a built-in genome index
-      . “Using reference genome”: Human:hg19
-      . “Single or Paired-end reads”: Paired
-      . “Select first set of reads”: the forward reads (R1) dataset of the father sample
-      . “Select second set of reads”: the reverse reads (R2) dataset of the father sample
-      . “Set read groups information?”: Set read groups (SAM/BAM specification)
-      . “Auto-assign”: No
       . “Read group identifier (ID)”: 002
-      . “Auto-assign”: No
       . “Read group sample name (SM)”: proband
       
   ```
@@ -145,3 +129,44 @@ Filter the mapped reads by selecting the tool, Filter SAM or BAM, output SAM or 
     .“Genome”: Homo sapiens: hg19 (or a similarly named option)
     .“Produce Summary Stats”: Yes
 ```
+## Generate GEMINI Database
+
+```
+- Use the GEMINI load tool and set the following parameters:
+    .“VCF dataset to be loaded in the GEMINI database”: the output of SnpEff eff tool
+    .“The variants in this input are”: annotated with snpEff
+    .“This input comes with genotype calls for its samples”: Yes
+    
+    .Sample genotypes were called by Freebayes for us.
+    .“Choose a gemini annotation source”: select the latest available annotations snapshot (most likely, there will be only one)
+    .“Sample and family information in PED format”: the pedigree file prepared above
+    .“Load the following optional content into the database”
+        ✅ “GERP scores”
+        ✅ “CADD scores”
+        ✅“Gene tables”
+        ✅“Sample genotypes”
+        ✅“variant INFO field”
+    .Leave unchecked the following:
+        - “Genotype likelihoods (sample PLs)”
+        - “only variants that passed all filters”
+```
+
+### Candidate Variant Detection
+
+```
+Use the GEMINI inheritance pattern tool and set the following parameters:
+“GEMINI database”: the GEMINI database of annotated variants; output of GEMINI load tool
+“Your assumption about the inheritance pattern of the phenotype of interest”: Autosomal recessive
+“Additional constraints on variants”
+“Additional constraints expressed in SQL syntax”: impact_severity != 'LOW'
+“Include hits with less convincing inheritance patterns”: No
+“Report candidates shared by unaffected samples”: No
+“Family-wise criteria for variant selection”: keep default settings
+In “Output - included information”
+“Set of columns to include in the variant report table”: Custom (report user-specified columns)
+“Choose columns to include in the report”:
+ “alternative allele frequency (max_aaf_all)”
+“Additional columns (comma-separated)”: chrom, start, ref, alt, impact, gene, clinvar_sig, clinvar_disease_name, clinvar_gene_phenotype, rs_ids
+
+```
+
