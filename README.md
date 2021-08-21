@@ -28,36 +28,15 @@ Exciting!😍
 <br>
 
 ## Project Title: "Diagnosis of Osteopetrosis using  Exome Sequencing Data Analysis" :computer:
-Have a look at the New state-of-the-art molecular diagnostic genetic test-"Exome Sequencing"
+Have a look at the ***New state-of-the-art molecular diagnostic genetic test-"Exome Sequencing"***
 
-There are around 180,000 exons in humans, with a total length of approximately 30 million base pairs (30 Mb). Thus, while accounting for only 1% of the human genome, the exome is thought to include up to 85% of all disease-causing mutations.
-
-Exome sequencing, as an alternative to whole-genome sequencing in the detection of genetic disease, is less expensive while yet covering significantly more potential disease-causing variant sites than genotyping arrays. This is especially important in the case of rare genetic conditions, since the causal variations may present in the human population at too low a frequency to be included on genotyping arrays.
+There are around 180,000 exons in humans, with a total length of approximately 30 million base pairs (30 Mb). Thus, while accounting for only 1% of the human genome, the exome is thought to include up to 85% of all disease-causing mutations. **Exome sequencing**, as an alternative to whole-genome sequencing in the detection of genetic disease, is less expensive while yet covering significantly more potential disease-causing variant sites than genotyping arrays. This is especially important in the case of rare genetic conditions, since the causal variations may present in the human population at too low a frequency to be included on genotyping arrays.
 
 Our Lab of Genomics-One-A will investigate :detective: exome sequencing data from a family triple:family_man_woman_boy: in which the boy child has osteopetrosis (rare genetic disorder with abnormally dense bones:bone: and prone to breakage) and both parents, who are consanguineous, are unaffected. Our lab’s goal is to figure out which genetic variant is causing the condition.
 
 <br>
 
 ## Workflow ✍️
-Step 1: Retrieve sequenced reads of father, mother and proband  in fastq format and import the datasets into the https://usegalaxy.org/ or https://usegalaxy.eu/
-
-Step 2: Perform quality check using FastQC tool and aggregate all the FastQC results into single report using MultiQC tool.
-
-Step 3: Perform adapter trimming using Trimmomatic tool on fastq datasets.
-
-Step 4: Perform read mapping using Map with BWA-MEM tool to generate BAM file.
-
-Step 5: Perform mapped reads post-processing using Filter SAM or BAM, output SAM or BAM tool and RmDup tool to filter low quality mapped reads and remove duplicate reads respectively. 
-
-Step 6: Perform variant calling step using FreeBayes tools to generate VCF file containing SNPs, MNPs and Indels.
-
-Step 7: Perform FreeBayes post-processing using bcftool norm to normalize indels and split multiallelic sites into multiple rows.
-
-Step 8: Perform variant annotation using SnpEff eff tool and SnpSift tool.
-
-Step 9: Perform the combined variant extraction/annotation/storage step using GEMINI load tool.
-
-Step 10: Perform candidate variant detection using GEMINI inheritance pattern tool.
 
 ### Step 1: Data preparation
 Retrieve sequenced reads of father, mother and proband  in fastq format from [Zendo](https://zenodo.org/record/3054169) and import the datasets into the https://usegalaxy.org/ or https://usegalaxy.eu/
@@ -122,7 +101,7 @@ Retrieve sequenced reads of father, mother and proband  in fastq format from [Ze
 ### Step 5: Mapped Reads Post-processing
 
 #### ⨀ Filtering Mapped reads
-- Filter the mapped reads by selecting the tool, **Filter SAM or BAM, output SAM or BAM**, and set the following parameters:
+Filter the mapped reads by selecting the tool, **Filter SAM or BAM, output SAM or BAM**, and set the following parameters:
 
 ```
   - “SAM or BAM file to filter”: all 3 mapped reads datasets of the family trio, outputs of Map with BWA-MEM tool
@@ -135,7 +114,7 @@ Retrieve sequenced reads of father, mother and proband  in fastq format from [Ze
 
 ```
 #### ⨀ Removing duplicate reads
-- Select **RmDup tool** and set the following parameters:
+Select **RmDup tool** and set the following parameters:
 ```
    - “BAM file”: all 3 filtered reads datasets; the outputs of Filter SAM or BAM
    - “Is this paired-end or single end data”: BAM is paired end
@@ -145,31 +124,29 @@ Ensure if three more new datasets are produced after this step.
 
 
 ### Step 6: Variant Calling 
-
-#### ⨀ Generating FreeBayes Calls
 - Select the **FreeBayes tool** and set the parameters:
 ```
-     . “Choose the source for the reference genome”:
-     . “Run in batch mode?”: Merge output VCFs
-     . “BAM dataset(s)”:
-     . “Using reference genome”: Human: hg19
-     . “Limit variant calling to a set of regions?”: Do not limit
-     . “Choose parameter selection level”: 1. Simple diploid calling
+     - “Choose the source for the reference genome”:
+     - “Run in batch mode?”: Merge output VCFs
+     - “BAM dataset(s)”:
+     - “Using reference genome”: Human: hg19
+     - “Limit variant calling to a set of regions?”: Do not limit
+     - “Choose parameter selection level”: 1. Simple diploid calling
 ```
 Inspect the VCF outputs produced by FreeBayes.
 
 ### Step 7: FreeBayes Post-processing
 - Use the **bcftools norm tool** and set the following parameters:
  ```
-     . “VCF/BCF Data”: the VCF output of FreeBayes tool
-     . “Choose the source for the reference genome”: Use a built-in genome
-     . “Reference genome”: Human: hg19
-     . “When any REF allele does not match the reference genome base”: Ignore the problem (-w)
-     . “Left-align and normalize indels?”: Yes
-     . “Perform deduplication for the following types of variant records”: do not deduplicate any records.
-     . “~multiallelics”: split multiallelic sites into biallelic records (-)
-     . “split the following variant types”: both
-     . “output_type”: uncompressed VCF
+     - “VCF/BCF Data”: the VCF output of FreeBayes tool
+     - “Choose the source for the reference genome”: Use a built-in genome
+     - “Reference genome”: Human: hg19
+     - “When any REF allele does not match the reference genome base”: Ignore the problem (-w)
+     - “Left-align and normalize indels?”: Yes
+     - “Perform deduplication for the following types of variant records”: do not deduplicate any records.
+     - “~multiallelics”: split multiallelic sites into biallelic records (-)
+     - “split the following variant types”: both
+     - “output_type”: uncompressed VCF
 ```
 Look out for the output listing the total number of variant lines processed, along with the number of splits, realigned, and skipped records
 
@@ -191,34 +168,36 @@ Look out for the output listing the total number of variant lines processed, alo
     - “Genome”: Homo sapiens: hg19 (or a similarly named option)
     - “Produce Summary Stats”: Yes
 ```
-## Generate GEMINI Database
+- Use the **SnpSift Variant type tool** and select output of SnpEff and execute.
+
+### Step 9: Generate GEMINI Database
+- Use the **GEMINI load tool** and set the following parameters:
 
 ```
-- Use the GEMINI load tool and set the following parameters:
-    .“VCF dataset to be loaded in the GEMINI database”: the output of SnpEff eff tool
-    .“The variants in this input are”: annotated with snpEff
-    .“This input comes with genotype calls for its samples”: Yes
+    - “VCF dataset to be loaded in the GEMINI database”: the output of SnpEff eff tool
+    - “The variants in this input are”: annotated with snpEff
+    - “This input comes with genotype calls for its samples”: Yes
     
-    .Sample genotypes were called by Freebayes for us.
-    .“Choose a gemini annotation source”: select the latest available annotations snapshot (most likely, there will be only one)
-    .“Sample and family information in PED format”: the pedigree file prepared above
-    .“Load the following optional content into the database”
+   Sample genotypes were called by Freebayes for us.
+    - “Choose a gemini annotation source”: select the latest available annotations snapshot (most likely, there will be only one)
+    - “Sample and family information in PED format”: the pedigree file prepared above
+    - “Load the following optional content into the database”
         ✅ “GERP scores”
         ✅ “CADD scores”
         ✅“Gene tables”
         ✅“Sample genotypes”
         ✅“variant INFO field”
-    .Leave unchecked the following:
-        - “Genotype likelihoods (sample PLs)”
-        - “only variants that passed all filters”
+    
+   Leave unchecked the following:
+     - “Genotype likelihoods (sample PLs)”
+     - “only variants that passed all filters”
 ```
 
-### Candidate Variant Detection
-
+### Step 10: Candidate Variant Detection
+- Use the **GEMINI inheritance pattern tool** and set the following parameters:
 ```
-- Use the GEMINI inheritance pattern tool and set the following parameters:
-    .“GEMINI database”: the GEMINI database of annotated variants; output of GEMINI load tool
-    .“Your assumption about the inheritance pattern of the phenotype of interest”: Autosomal recessive
+- “GEMINI database”: the GEMINI database of annotated variants; output of GEMINI load tool
+- “Your assumption about the inheritance pattern of the phenotype of interest”: Autosomal recessive
         >“Additional constraints on variants”
         >“Additional constraints expressed in SQL syntax”: impact_severity != 'LOW'
         >“Include hits with less convincing inheritance patterns”: No
@@ -255,7 +234,7 @@ Get to know our awesome team members and their contributions 👩‍💻👨‍�
 | Team members	| @Slack username  | Contributions |
 | :------------- | :-------------	| :------------- |
 | [Aditi Singh](https://github.com/Aditisingh11322)	| @AditiSingh12345  | Validation of Workflow and Retrieved Datasets and uploaded on Galaxy, Performed trimming of reads |
-| [Amandeep Kaur (Team Lead)](https://github.com/662amandeep) |@Amandeep  | Conceptualization and validation of the workflow, performed variant annotation using SnpSift, Modified Graphical representation, Modified Github readme file and added all the required files and folders  | 
+| [Amandeep Kaur (Team Lead)](https://github.com/662amandeep) |@Amandeep  | Conceptualization and validation of the workflow, performed variant annotation using SnpSift, Modified Graphical representation, Created Github repo and added all the required files and folders, Contributed in steps markdown | 
 | [Ananya Saji](https://github.com/AnanyaSaji) |@AnanyaSaji |  Validation of Workflow and Performed FastQC of Father’s dataset |
 | [Anjali Negi](https://github.com/genesis234) | @genesis  | Validation of Workflow and Performed FastQC of Mother’s dataset, Worked on Graphical representation  |
 | [Darshana Joshi](https://github.com/darshana2509) | @DarshanaJoshi  | Validation of Workflow and Performed variant annotation using GEMINI load and candidate variant detection |
