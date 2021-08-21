@@ -2,12 +2,12 @@
 
 ### Step 1. Data Preparation
 Following links are the galaxy links with uploaded datasets:
-- **Uploaded Father_R1_fastq_file:** [Galaxy link](https://usegalaxy.eu/datasets/11ac94870d0bb33a94963102d559fad9/display/?preview=True)
-- **Uploaded Father_R2_fastq_file:** [Galaxy link](https://usegalaxy.eu/datasets/11ac94870d0bb33a612b4dc4e32ee64b/display/?preview=True)
-- **Uploaded Mother_R1_fastq_file:** [Galaxy link](https://usegalaxy.eu/datasets/11ac94870d0bb33ae00919ce6f0ec993/display/?preview=True)
-- **Uploaded Mother_R2_fastq_file:** [Galaxy link](https://usegalaxy.eu/datasets/11ac94870d0bb33af7eada2e86e1cd19/display/?preview=True)
-- **Uploaded Proband_R1_fastq_file:** [Galaxy link](https://usegalaxy.eu/datasets/11ac94870d0bb33a331f37d5e50d47ec/display/?preview=True)
-- **Uploaded Proband_R2_fastq_file:** [Galaxy link](https://usegalaxy.eu/datasets/11ac94870d0bb33afec1c6ffd1fc3eb1/display/?preview=True)
+- Uploaded Father_R1_fastq_file: [Galaxy link](https://usegalaxy.eu/datasets/11ac94870d0bb33a94963102d559fad9/display/?preview=True)
+- Uploaded Father_R2_fastq_file: [Galaxy link](https://usegalaxy.eu/datasets/11ac94870d0bb33a612b4dc4e32ee64b/display/?preview=True)
+- Uploaded Mother_R1_fastq_file: [Galaxy link](https://usegalaxy.eu/datasets/11ac94870d0bb33ae00919ce6f0ec993/display/?preview=True)
+- Uploaded Mother_R2_fastq_file: [Galaxy link](https://usegalaxy.eu/datasets/11ac94870d0bb33af7eada2e86e1cd19/display/?preview=True)
+- Uploaded Proband_R1_fastq_file: [Galaxy link](https://usegalaxy.eu/datasets/11ac94870d0bb33a331f37d5e50d47ec/display/?preview=True)
+- Uploaded Proband_R2_fastq_file: [Galaxy link](https://usegalaxy.eu/datasets/11ac94870d0bb33afec1c6ffd1fc3eb1/display/?preview=True)
 
 ### Step 2: Quality Control
 In this project, after uploading datasets, quality check was performed for using FastQC tool. The FastQC tool gave the output with a good Phred score, which signifies those reads are of good quality. The following are the output of FastQC tool:
@@ -59,13 +59,13 @@ Mapping was performed using Map with BWA-MEM tool on fathers, mother’s and pro
 
 ### Step 5: Mapped reads Post-processing
 Mapped reads post-processing was performed to filter mapped reads and remove duplicate reads using Filter SAM or BAM, output SAM or BAM and RmDup tools respectively.
-- Filtered Father reads: [Click Here]()
-- Filtered Mother reads: [Click Here]()
-- Filtered Proband reads: [Click Here]()
+- Filtered Father reads: [Click Here](https://usegalaxy.eu/datasets/11ac94870d0bb33ace8620f7300404b4/display/?preview=True)
+- Filtered Mother reads: [Click Here](https://usegalaxy.eu/datasets/11ac94870d0bb33a313db3454518c4eb/display/?preview=True)
+- Filtered Proband reads: [Click Here](https://usegalaxy.eu/datasets/11ac94870d0bb33a5305c8e134859dd6/display/?preview=True)
 <br>
-- Remove duplicates from Fathers mapped reads: [Click Here]()
-- Remove duplicates from Mothers mapped reads: [Click Here]()
-- Remove duplicates from Probands mapped reads: [Click Here]()
+- Remove duplicates from Fathers mapped reads: [Click Here](https://usegalaxy.eu/datasets/11ac94870d0bb33ae709a02d2e968e08/display/?preview=True)
+- Remove duplicates from Mothers mapped reads: [Click Here](https://usegalaxy.eu/datasets/11ac94870d0bb33a99de7a73c89c41a2/display/?preview=True)
+- Remove duplicates from Probands mapped reads: [Click Here](https://usegalaxy.eu/datasets/11ac94870d0bb33a14dd7ce3d152585d/display/?preview=True)
 <br>
 <br>
 
